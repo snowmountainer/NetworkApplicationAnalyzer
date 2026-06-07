@@ -37,7 +37,10 @@ Optional:
 ```powershell
 .\NetworkApplicationAnalyzer.ps1 `
     -Executable "C:\Program Files\Bambu Studio\bambu-studio.exe" `
-    -DurationSeconds 60
+    -Arguments "" ` 
+    -DurationSeconds 60 `
+    -PollingIntervalSeconds 2 `
+    -EnableProcmon # Procmon is optional and not required for network analysis.
 ```
     
 ## Output
