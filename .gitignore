@@ -1,0 +1,13 @@
+Reports/
+
+*.etl
+*.pml
+*.csv
+*.log
+
+Procmon64.exe
+
+Thumbs.db
+Desktop.ini
+
+.vscode/
