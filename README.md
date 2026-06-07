@@ -38,6 +38,7 @@ Optional:
 .\NetworkApplicationAnalyzer.ps1 `
     -Executable "C:\Program Files\Bambu Studio\bambu-studio.exe" `
     -DurationSeconds 60
+```
     
 ## Output
 
@@ -45,7 +46,24 @@ Reports are generated under:
 
 ```text
 Reports\yyyyMMdd_HHmmss
+```
 
+Generated files:
+
+- Report.html
+- CombinedReport.csv
+- Connections.csv
+- DnsCache.csv
+- Proxy-AllowList.txt
+- Proxy-AllowList-Wildcards.txt
+
+## Procmon Support
+
+The analyzer works without Procmon by default.
+
+If Procmon64.exe is available in the project root, additional process activity can be collected.
+
+Procmon is optional and not required for network analysis.
 
 ## Use Cases
 
@@ -55,14 +73,7 @@ Reports\yyyyMMdd_HHmmss
 - Software packaging validation
 - Network dependency analysis
 - Security reviews
-```
 
-## Procmon Support
+## License
 
-The analyzer works without Procmon by default.
-
-If Procmon64.exe is available in the project root, additional process activity can be collected.
-
-Procmon is optional and not required for network analysis.
-```
-    
+MIT License
