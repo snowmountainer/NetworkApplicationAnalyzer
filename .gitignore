@@ -1,13 +1,20 @@
+# Reports
 Reports/
 
-*.etl
+# Procmon output
 *.pml
+*.etl
 *.csv
+
+# Logs
 *.log
 
-Procmon64.exe
+# PowerShell transcripts
+Transcript.log
 
+# VS Code
+.vscode/
+
+# Windows
 Thumbs.db
 Desktop.ini
-
-.vscode/
