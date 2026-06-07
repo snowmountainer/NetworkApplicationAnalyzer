@@ -1,15 +1,10 @@
 [CmdletBinding()]
 param(
-
     [Parameter(Mandatory)]
     [string]$Executable,
-
     [string]$Arguments = "",
-
     [int]$DurationSeconds = 60,
-
     [int]$PollingIntervalSeconds = 1,
-
     [switch]$EnableProcmon
 )
 
