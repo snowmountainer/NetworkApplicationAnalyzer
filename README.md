@@ -57,6 +57,10 @@ Generated files:
 - Proxy-AllowList.txt
 - Proxy-AllowList-Wildcards.txt
 
+## Sample Report
+
+![Sample Report](docs/report-example.png)
+
 ## Procmon Support
 
 The analyzer works without Procmon by default.
