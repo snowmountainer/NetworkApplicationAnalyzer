@@ -82,6 +82,12 @@ Procmon is optional and not required for network analysis.
 - Network dependency analysis
 - Security reviews
 
+## Contributing
+
+Contributions, bug reports and feature requests are welcome.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
 ## License
 
 MIT License
