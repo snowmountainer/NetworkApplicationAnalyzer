@@ -14,13 +14,15 @@ The tool automatically:
 
 ## Features
 
-- Recursive process tracking
-- DNS hostname correlation
-- Proxy allow list generation
+- Recursive child process tracking
+- TCP and UDP connection monitoring
+- DNS cache correlation
+- Hostname resolution
+- Proxy allow-list generation
 - HTML reporting
-- CSV export
+- CSV exports
 - Optional Procmon integration
-- No packet capture required
+- Configurable polling interval
 
 ## Requirements
 
@@ -50,7 +52,6 @@ Reports are generated under:
 ```text
 Reports\yyyyMMdd_HHmmss
 ```
-
 Generated files:
 
 - Report.html
