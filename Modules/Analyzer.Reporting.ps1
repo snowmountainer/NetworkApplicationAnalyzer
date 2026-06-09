@@ -183,12 +183,14 @@ function New-HtmlReport {
             -Unique
     ).Count
 
-    $ConnectionCount =
-        $Combined.Count
+    $ConnectionCount = @($Combined).Count
 
-    $ProcessCount =
-        ($ProcessTree |
-            Select-Object -ExpandProperty ProcessId -Unique).Count
+    $UniqueProcesses = @(
+        $ProcessTree |
+        Select-Object -ExpandProperty ProcessId -Unique
+    )
+
+    $ProcessCount = $UniqueProcesses.Count
 
     $HostStats =
         Get-HostStatistics `
